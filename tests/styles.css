@@ -1,0 +1,66 @@
+.api-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.api-service .card {
+  width: 60%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.api-service .card .header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.api-service .card .body {
+  padding: 20px;
+}
+
+.api-service .card .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-top: 1px solid #333;
+}
+
+.api-service .error {
+  color: #f00;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.api-service .success {
+  color: #0f0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.api-service .spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  border-top: 2px solid #0f0;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
